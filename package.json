@@ -1,0 +1,32 @@
+{
+  "name": "ob-pele",
+  "version": "1.0.0",
+  "description": "Render Mermaid diagrams in Obsidian with Pele and curated themes.",
+  "main": "main.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit --skipLibCheck && node esbuild.config.mjs production",
+    "verify": "node scripts/verify.mjs && node scripts/unit.mjs",
+    "deploy": "npm run build && node scripts/deploy.mjs"
+  },
+  "keywords": [
+    "obsidian",
+    "mermaid",
+    "pele",
+    "diagrams"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "pele": "1.7.0"
+  },
+  "devDependencies": {
+    "@codemirror/state": "6.7.6",
+    "@codemirror/view": "6.43.13",
+    "@types/node": "26.6.5",
+    "esbuild": "0.28.2",
+    "obsidian": "1.14.4",
+    "typescript": "5.9.3"
+  }
+}

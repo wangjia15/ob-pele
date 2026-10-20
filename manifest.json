@@ -1,0 +1,9 @@
+{
+  "id": "ob-pele",
+  "name": "Pele Mermaid Renderer",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Render Mermaid diagrams with Pele, with seven themes, per-diagram overrides, and live preview.",
+  "author": "REA",
+  "isDesktopOnly": false
+}
